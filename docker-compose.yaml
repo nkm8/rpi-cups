@@ -1,0 +1,9 @@
+version: '2'
+services:
+  nukkit:
+    image: lemariva/rpi-cups:latest
+    ports:
+      - "631:631"
+    volumes:
+      - /mnt/data/supervisor/share/cups/dbus:/var/run/dbus
+      - /mnt/data/supervisor/share/cups/usb:/dev/bus/usb
